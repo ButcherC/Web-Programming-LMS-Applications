@@ -1,0 +1,16 @@
+body {
+    background-image: url("blue.jpg");
+}
+
+aside {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+}
