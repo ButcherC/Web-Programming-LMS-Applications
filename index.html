@@ -7,7 +7,7 @@
     <h2><i class="fas fa-volleyball-ball"></i><i class="fas fa-baseball-ball"></i><i class="fas fa-futbol"><i class="fas fa-football-ball"></i><i class="fas fa-basketball-ball"></i></i></h2>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/93d37f7505.js" crossorigin="anonymous"></script>
     <title>Hello, world!</title>
   </head>
@@ -40,56 +40,52 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     
-    <table class="table table-striped" id="sports">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Team Name</th>
-      <th scope="col">League</th>
-      <th scope="col">Coach</th>
-      <th scope="col">Team Admin Name & Phone</th>
-      <th scope="col"># of Players</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr id="firstTeam" data-toggle="tooltip" title="Tigers, Boys U-10, Coach: John Doe">
-      <th scope="row"></th>
+    <div id="table">
+        
+        <div class="headerName">Team Name</div>
+        <div class="headerLeague"> League</div>
+        <div class="headerCoach">Coach</div>
+        <div class="headerAdmin">Team Admin and Phone</div>
+        <div class="headerNumPlayers">Number of Players</div>
+        <div class="edit">Edit</div>
+    
       
-      <td class="teamName" id="one">Tigers</td>
-      <td>Boys U-10</td>
-      <td>John Doe</td>
-      <td>James Jam - (123) 712 - 1234</td>
-      <td>5</td>
+      <div class="team1Name">Tigers</div>
+      <div class="team1League">Boys U-10</div>
+      <div class="team1Coach">John Doe</div>
+      <div class="team1Admin">James Jam - (123) 712 - 1234</div>
+      <div class="team1Players">5</div>
      
-      <td><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt team1" id="team1"></i><br>
+      <div class="button1"><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt team1" id="team1"></i><br>
           <button type="button" class="btn btn-info" data-toggle="popover" title="Information" data-content="Tigers, Boys U-10">Info</button>
-      </td>
-    </tr>
-    <tr id="secondTeam" data-toggle="tooltip" title="Dolphins, Girls U-10, Coach: Jane Doen">
-      <th scope="row"></th>
+      </div>
+   
+   
+    
+        
+        <div class="team2Name">Dolphins</div>
+        <div class="team2League">Girls U-10</div>
+        <div class="team2Coach">Jane Doen</div>
+        <div class="team2Admin">Tom Johnson (234) 567 - 8901</div>
+        <div class="team2Players">8</div>
+        <div class="buttonTwo"><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt team2" id="team2"></i><br>
+            <button type="button" class="btn btn-info" id="dolphins" data-toggle="popover" title="Information" data-content="Dolphins, Girls U-10">Info</button></div>
+     
+     
       
-      <td class="teamName" id="two">Dolphins</td>
-      <td>Girls U-10</td>
-      <td>Jane Doen</td>
-      <td>Tom Johnson - (234) 567 - 8901</td>
-      <td>8</td>
-      <td><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt team2" id="team2"></i><br>
-        <button type="button" class="btn btn-info" id="dolphins" data-toggle="popover" title="Information" data-content="Dolphins, Girls U-10">Info</button></td>
-    </tr>
-    <tr id="thirdTeam" data-toggle="tooltip" title="Parrots, Girls 13-14, Coach: Josie Doe">
-      <th scope="row"></th>
+       
+        <div class="team3Name">Parrots</div>
+        <div class="team3League">Girls 13-14</div>
+        <div class="team3Coach">Josie Doe</div>
+        <div class="team3Admin">Carrie Nelson (345) 678 - 9012</div>
+        <div class="team3Players">10</div>
+        <div class="buttonThree"><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt" id="team3"></i><br>
+            <button type="button" class="btn btn-info" data-toggle="popover" title="Information" data-content="Parrots, Girls 13-14">Info</button></div>
+      </div>
       
-      <td class="teamName" id="three">Parrots</td>
-      <td>Girls 13-14</td>
-      <td>Josie Doe</td>
-      <td>Carrie Nelson - (345) 678 - 9012</td>
-      <td>10</td>
-      <td><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt" id="team3"></i><br>
-        <button type="button" class="btn btn-info" data-toggle="popover" title="Information" data-content="Parrots, Girls 13-14">Info</button></td>
-    </tr>
-  </tbody>
-</table>
+      
+    
+  
   </body>
   <footer>Copyright @2020 Caitlin Butcher</footer>
 </html>
